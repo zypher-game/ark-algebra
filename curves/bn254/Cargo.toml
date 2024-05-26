@@ -1,11 +1,11 @@
 [package]
-name = "ark-bn254"
+name = "ark-bn254-zypher"
 version = "0.4.0"
 authors = [ "arkworks contributors" ]
 description = "The BN254 pairing-friendly elliptic curve"
 homepage = "https://arkworks.rs"
-repository = "https://github.com/arkworks-rs/algebra"
-documentation = "https://docs.rs/ark-bn254/"
+repository = "https://github.com/zypher-game/ark-algebra"
+documentation = "https://docs.rs/ark-bn254-zypher/"
 keywords = ["cryptography", "finite-fields", "elliptic-curves" ]
 categories = ["cryptography"]
 include = ["Cargo.toml", "src", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
@@ -13,17 +13,17 @@ license = "MIT/Apache-2.0"
 edition = "2021"
 
 [dependencies]
-ark-ff = { version= "0.4.0", default-features = false }
-ark-ec = { version= "0.4.0", default-features = false }
-ark-std = { version = "0.4.0", default-features = false }
-ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true }
+ark-ff = { version= "0.4.0", default-features = false, package = "ark-ff-zypher"  }
+ark-ec = { version= "0.4.0", default-features = false, package = "ark-ec-zypher"  }
+ark-std = { version = "0.4.0", default-features = false, package = "ark-std-zypher"  }
+ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true, package = "ark-r1cs-std-zypher"  }
 
 [dev-dependencies]
-ark-serialize = { version = "0.4.0", default-features = false }
+ark-serialize = { version = "0.4.0", default-features = false, package = "ark-serialize-zypher"  }
 ark-algebra-test-templates = { version = "0.4.0", default-features = false }
 ark-algebra-bench-templates = { version = "0.4.0", default-features = false }
 ark-curve-constraint-tests = { path = "../curve-constraint-tests", default-features = false }
-ark-relations = { version = "0.4.0", default-features = false }
+ark-relations = { version = "0.4.0", default-features = false, package = "ark-relations-zypher"  }
 
 [features]
 default = [ "curve" ]

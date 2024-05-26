@@ -1,11 +1,11 @@
 [package]
-name = "ark-ed-on-bn254"
+name = "ark-ed-on-bn254-zypher"
 version = "0.4.0"
 authors = [ "arkworks contributors" ]
 description = "A Twisted Edwards curve defined over the scalar field of the BN254 curve"
 homepage = "https://arkworks.rs"
-repository = "https://github.com/arkworks-rs/algebra"
-documentation = "https://docs.rs/ark-ed-on-bn254/"
+repository = "https://github.com/zypher-game/ark-algebra"
+documentation = "https://docs.rs/ark-ed-on-bn254-zypher/"
 keywords = ["cryptography", "finite-fields", "elliptic-curves" ]
 categories = ["cryptography"]
 include = ["Cargo.toml", "src", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
@@ -13,15 +13,15 @@ license = "MIT/Apache-2.0"
 edition = "2021"
 
 [dependencies]
-ark-ff = { version = "0.4.0", default-features = false }
-ark-ec = { version = "0.4.0", default-features = false }
-ark-std = { version = "0.4.0", default-features = false }
-ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true }
-ark-bn254 = { version = "0.4.0", path = "../bn254", default-features = false, features = [ "scalar_field" ] }
+ark-ff = { version = "0.4.0", default-features = false, package = "ark-ff-zypher"  }
+ark-ec = { version = "0.4.0", default-features = false, package = "ark-ec-zypher"  }
+ark-std = { version = "0.4.0", default-features = false, package = "ark-std-zypher"  }
+ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true, package = "ark-r1cs-std-zypher"  }
+ark-bn254 = { version = "0.4.0", path = "../bn254", default-features = false, features = [ "scalar_field" ], package = "ark-bn254-zypher"  }
 
 [dev-dependencies]
-ark-relations = { version = "0.4.0", default-features = false }
-ark-serialize = { version = "0.4.0", default-features = false }
+ark-relations = { version = "0.4.0", default-features = false, package = "ark-relations-zypher"  }
+ark-serialize = { version = "0.4.0", default-features = false, package = "ark-serialize-zypher"  }
 ark-algebra-test-templates = { version = "0.4.0", default-features = false }
 ark-curve-constraint-tests = { path = "../curve-constraint-tests", default-features = false }
 

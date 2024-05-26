@@ -1,7 +1,7 @@
 [package]
-name = "ark-poly"
+name = "ark-poly-zypher"
 description = "A library for efficient polynomial arithmetic via FFTs over finite fields"
-documentation = "https://docs.rs/ark-poly/"
+documentation = "https://docs.rs/ark-poly-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true

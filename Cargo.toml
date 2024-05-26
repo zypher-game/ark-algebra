@@ -21,7 +21,7 @@ resolver = "2"
 version = "0.4.2"
 authors = [ "arkworks contributors" ]
 homepage = "https://arkworks.rs"
-repository = "https://github.com/arkworks-rs/algebra"
+repository = "https://github.com/zypher-game/ark-algebra"
 categories = ["cryptography"]
 include = ["Cargo.toml", "src", "README.md", "LICENSE-APACHE", "LICENSE-MIT", "doc/katex-header.html"]
 license = "MIT OR Apache-2.0"
@@ -35,14 +35,14 @@ rustdoc-args = [ "--html-in-header katex-header.html" ]
 dependent-version = "fix"
 
 [workspace.dependencies]
-ark-ec = { version = "0.4.2", path = "./ec", default-features = false }
-ark-ff = { version = "0.4.2", path = "./ff", default-features = false }
-ark-ff-asm = { version = "0.4.2", path = "./ff-asm" }
-ark-ff-macros = { version = "0.4.2", path = "./ff-macros" }
-ark-poly = { version = "0.4.2", path = "./poly", default-features = false }
-ark-serialize = { version = "0.4.2", path = "./serialize", default-features = false }
-ark-serialize-derive = { version = "0.4.2", path = "./serialize-derive" }
-ark-std = { version = "0.4.0", default-features = false }
+ark-ec = { version = "0.4.2", path = "./ec", default-features = false, package = "ark-ec-zypher" }
+ark-ff = { version = "0.4.2", path = "./ff", default-features = false, package = "ark-ff-zypher" }
+ark-ff-asm = { version = "0.4.2", path = "./ff-asm", package = "ark-ff-asm-zypher" }
+ark-ff-macros = { version = "0.4.2", path = "./ff-macros", package = "ark-ff-macros-zypher" }
+ark-poly = { version = "0.4.2", path = "./poly", default-features = false, package = "ark-poly-zypher" }
+ark-serialize = { version = "0.4.2", path = "./serialize", default-features = false, package = "ark-serialize-zypher" }
+ark-serialize-derive = { version = "0.4.2", path = "./serialize-derive", package = "ark-serialize-derive-zypher" }
+ark-std = { version = "0.4.0", default-features = false, package = "ark-std-zypher" }
 
 ark-algebra-bench-templates =  { version = "0.4.2", path = "./bench-templates", default-features = false }
 ark-algebra-test-templates = { version = "0.4.2", path = "./test-templates", default-features = false }
@@ -98,6 +98,3 @@ lto = "thin"
 incremental = true
 debug-assertions = true
 debug = true
-
-[patch.crates-io]
-ark-std = { git = "https://github.com/arkworks-rs/std/" }

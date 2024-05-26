@@ -1,7 +1,7 @@
 [package]
-name = "ark-ff-macros"
+name = "ark-ff-macros-zypher"
 description = "A library for generating x86-64 assembly for finite field multiplication"
-documentation = "https://docs.rs/ark-ff-macros/"
+documentation = "https://docs.rs/ark-ff-macros-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true

@@ -1,11 +1,11 @@
 [package]
-name = "ark-secq256k1"
+name = "ark-secq256k1-zypher"
 version = "0.4.0"
 authors = [ "arkworks contributors" ]
 description = "The secq256k1 curve"
 homepage = "https://arkworks.rs"
-repository = "https://github.com/arkworks-rs/algebra"
-documentation = "https://docs.rs/ark-secp256k1/"
+repository = "https://github.com/zypher-game/ark-algebra"
+documentation = "https://docs.rs/ark-secp256k1-zypher/"
 keywords = ["cryptography", "finite-fields", "elliptic-curves" ]
 categories = ["cryptography"]
 include = ["Cargo.toml", "src", "LICENSE-APACHE", "LICENSE-MIT"]
@@ -13,15 +13,15 @@ license = "MIT/Apache-2.0"
 edition = "2021"
 
 [dependencies]
-ark-ff = { version = "0.4.0", default-features = false }
-ark-ec = { version = "0.4.0", default-features = false }
-ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true }
-ark-std = { version = "0.4.0", default-features = false }
-ark-secp256k1 = { version = "0.4.0", path = "../secp256k1" }
+ark-ff = { version = "0.4.0", default-features = false, package = "ark-ff-zypher"  }
+ark-ec = { version = "0.4.0", default-features = false, package = "ark-ec-zypher"  }
+ark-r1cs-std = { version = "0.4.0", default-features = false, optional = true, package = "ark-r1cs-std-zypher"  }
+ark-std = { version = "0.4.0", default-features = false, package = "ark-std-zypher"  }
+ark-secp256k1 = { version = "0.4.0", path = "../secp256k1", package = "ark-secp256k1-zypher"  }
 
 [dev-dependencies]
-ark-relations = { version = "0.4.0", default-features = false }
-ark-serialize = { version = "0.4.0", default-features = false }
+ark-relations = { version = "0.4.0", default-features = false, package = "ark-relations-zypher"  }
+ark-serialize = { version = "0.4.0", default-features = false, package = "ark-serialize-zypher"  }
 ark-algebra-test-templates = { version = "0.4.0", default-features = false }
 ark-curve-constraint-tests = { path = "../curve-constraint-tests", default-features = false }
 

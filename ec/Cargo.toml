@@ -1,7 +1,7 @@
 [package]
-name = "ark-ec"
+name = "ark-ec-zypher"
 description = "A library for elliptic curves and pairings"
-documentation = "https://docs.rs/ark-ec/"
+documentation = "https://docs.rs/ark-ec-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true

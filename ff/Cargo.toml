@@ -1,8 +1,8 @@
 [package]
-name = "ark-ff"
+name = "ark-ff-zypher"
 description = "A library for finite fields"
 keywords = ["cryptography", "finite-fields" ]
-documentation = "https://docs.rs/ark-ff/"
+documentation = "https://docs.rs/ark-ff-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true

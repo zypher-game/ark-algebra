@@ -1,7 +1,7 @@
 [package]
-name = "ark-serialize-derive"
+name = "ark-serialize-derive-zypher"
 description = "A library for deriving serialization traits for the arkworks ecosystem"
-documentation = "https://docs.rs/ark-serialize-derive/"
+documentation = "https://docs.rs/ark-serialize-derive-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true

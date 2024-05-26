@@ -1,7 +1,7 @@
 [package]
-name = "ark-ff-asm"
+name = "ark-ff-asm-zypher"
 description = "A library for generating x86-64 assembly for finite field multiplication"
-documentation = "https://docs.rs/ark-ff-asm/"
+documentation = "https://docs.rs/ark-ff-asm-zypher/"
 version.workspace = true
 authors.workspace = true
 homepage.workspace = true
